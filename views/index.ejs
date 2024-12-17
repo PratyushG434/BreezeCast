@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreezeCast</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="logo/BreezeCast.png" type="image/png" width="100" height="auto">
+</head>
+<body>
+
+    <main>
+        <div class="container-2">
+            <div class="logo">
+                <img src="images/BreezeCast.png" alt="logo" height="70">
+
+            </div>
+            <div class="greet">
+                <h1>Welcome to BreezeCast. Get weather updates at fingertips.</h1>
+            </div>
+            <div>
+                <form action="/submit" method="POST" class="form-class">
+                    <input class="search-bar" type="text" name="prompt" placeholder="Search any location." required>
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+            <% if(locals.message){%>
+                <div>
+                    <h3><%= message %></h3>
+                </div>
+            <% } %>
+
+        </div>
+    </main>
+</body>
+</html>
