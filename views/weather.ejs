@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Genos:ital,wght@0,100..900;1,100..900&family=Homemade+Apple&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/weather.css">
     <title>BreezeCast</title>
     <link rel="icon" href="logo/BreezeCast.png" type="image/png">
@@ -60,7 +60,7 @@
                 <span id="img-span"><img src='images/<%= forecast[i].icon %>' alt="Weather Icon" height="50" color="white"></span>
             </div>
             <h2> <%= forecast[i].temp_max %>°C/<%= forecast[i].temp_min %>°C</h2>
-            <h4 id="forecast-description"> <%= forecast[i].weather %></h4>
+            <h3 id="forecast-description"> <%= forecast[i].weather %></h3>
         </div>
         <% } }%>
        
